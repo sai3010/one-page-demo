@@ -1,4 +1,21 @@
-h1 ,h3{
+.content{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:10%;
+    right: 25%;
+}
+p{
     text-align: center;
-
+    font-size: 30px;
+    color: blue;
+}
+.cat1{
+    display: inline;
+   height: 200px;
+}
+body{
+    background-image: url('topography.png');
+    font-family: Futura, Sans;
 }
