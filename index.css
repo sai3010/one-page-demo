@@ -102,13 +102,7 @@ img:hover{
     body{
             display: flex;
     vertical-align: middle;
-    justify-content: center;
-    }
-    form select{
-        width: 10vw;
-    }
-    .name{
-        width: 30vh;
+    justify-content: space-around;
     }
 #box-center{
     background-color: white;
