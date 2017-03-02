@@ -1,21 +1,124 @@
-.content{
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    top:10%;
-    right: 25%;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+@font-face {
+    font-family: Futura;
+    src: url(futura-book.woff);
 }
-p{
-    text-align: center;
-    font-size: 30px;
-    color: blue;
-}
-.cat1{
-    display: inline;
-   height: 200px;
+
+html body{
+    min-width: 100vw;
+    min-height: 100vh;
 }
 body{
-    background-image: url('topography.png');
     font-family: Futura, Sans;
+}
+input{
+    border-bottom: solid 1px !important;
+}
+.background{
+    position: fixed;
+    background-image: url('topography.png');
+    height: 100%;
+    background-repeat: repeat;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(.99);
+}
+.headquestion{
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #5f92d4;
+
+}
+#box-center{
+    /*box-shadow: 0px 0px 5px 10px rgba(0,0,0,.22);*/
+    min-height: 100%;
+    text-align: center;
+    height: 100vh;
+}
+#image-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#image-flex img{
+    width: 150px;
+    height: 150px;
+}
+.imgflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgflex img{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+}
+img:hover{
+    cursor: pointer;
+}
+.flex span{
+    font-family: Futura, sans;
+}
+.strip{
+    background: transparent;
+    background-color: rgba(0,0,0,0) !important;
+    border-radius: 0px !important;
+    text-decoration: none;
+    list-style-type: none;
+    box-shadow: none;
+    outline: none;
+}
+.btmtext{
+    color:#5f92d4;
+}
+.finished{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 5px;
+    color: white;
+}
+.button:hover{
+    cursor: pointer;
+}
+.button{
+     background-color: #5f92d4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 300px;
+}
+@media only screen and (min-width: 768px){
+    body{
+            display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    }
+    form select{
+        width: 10vw;
+    }
+    .name{
+        width: 30vh;
+    }
+#box-center{
+    background-color: white;
+    box-shadow: 0px 0px 5px 10px rgba(0,0,0,.22);
+    max-height: 80vh;
+    max-width: 90vw;
+    min-width: 60vh;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
 }

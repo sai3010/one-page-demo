@@ -1,49 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>2nd questuion</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>
+        Babblejoy
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport" />
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="images/favicon.png" rel="icon" type="image/png">
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="content ">
-    <p>What Are You Looking For Tooday?</p>
+  <div class="background"></div>
+  <div id = "box-center">
+    <p class="headquestion">
+      What are you looking for today?
+    </p>
+    <div id="image-flex">
+      <img src="clothes-01.png">
+      <img src="food-01.png">
     </div>
+    <div class="imgflex">
+      <img src="toys-01.png">
+      <img src="hygiene-01.png">
     </div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row">
-    <div class="col s1 m1"></div>
-    <div class="cat1">
-    <img class="col s5 m4 l4 cat1 " src="clothes-01.png" id="cloth">
+    <p class="btmtext">
+      Select one of the above to proceed to next step
+    </p>
+    <div class="finished">
+        <input type="button" class="button" value="I'm Finished!!" name="but">
     </div>
-    <div class="col s1 m1"></div>
-    <div class="cat1">
-     <img class="col s5 m4 cat1 " src="food-01.png" id="food">
-    </div>
-    </div>
-    <div class="row">
-    <div class="col s1 m1"></div>
-    <div >
-     <img class="col s5 m4 cat1 " src="hygiene-01.png" id="clothes">
-    </div>
-    <div class="col s1 m1"></div>
-    <div>
-     <img class="col s5 m4 cat1 " src="toys-01.png" id="clothes">
-    </div>
-    </div>
-    <p>Select One of the Above to proceed to next step</p>
+  </div>
 
-</div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
