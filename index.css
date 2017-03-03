@@ -31,7 +31,6 @@ input{
     padding-top: 20px;
     padding-bottom: 0px;
     color: #5f92d4;
-
 }
 #box-center{
     /*box-shadow: 0px 0px 5px 10px rgba(0,0,0,.22);*/
@@ -79,10 +78,20 @@ img:hover{
     color:#5f92d4;
 }
 .finished{
-    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 50%;
     margin-top: 55px;
     margin-left: 5px;
     color: white;
+}
+.prev{
+    display: inline-block;
+    margin-top: 55px;
+}
+.next{
+    display: inline-block;
+    margin-top: 55px;
 }
 .button:hover{
     cursor: pointer;
@@ -96,7 +105,11 @@ img:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 300px;
+    width: 100%;
+}
+#myimgbut{
+    height: 50px;
+    width: 50px;
 }
 @media only screen and (min-width: 768px){
     body{
@@ -114,5 +127,21 @@ img:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+}
+    .prev{
+        margin-left: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 380px){
+#image-flex img{
+    width: 120px;
+    height: 120px;
+}
+.imgflex img{
+    padding: 5px;
+    width: 120px;
+    height: 120px;
 }
 }
